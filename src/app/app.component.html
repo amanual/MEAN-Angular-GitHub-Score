@@ -3,7 +3,7 @@
   Github Username: <input type="text" 
                       name="name"
                       required
-                      [(ngModel)] = "username">
+                      [(ngModel)] = "username"><label *ngIf = "!name.valid"></label>
   <button [disabled]="!form.valid" >Calculate my Github Score</button>
 </form>
 
